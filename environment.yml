@@ -1,0 +1,13 @@
+# conda env create -f environment.yml
+name: threddsclient
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - six
+  - requests
+  - beautifulsoup4
+  - lxml
+# tests
+  - pytest
+  - flake8
