@@ -1,5 +1,6 @@
 import urlparse
 
+
 def fix_catalog_url(url):
     """
     Replace .html with .xml extension
@@ -18,7 +19,7 @@ def fix_catalog_url(url):
 def construct_url(url, href):
     u = urlparse.urlsplit(url)
     base_url = u.scheme + "://" + u.netloc
-    relative_path = urlparse.urljoin(base_url,os.path.split(u.path)[0])
+    relative_path = urlparse.urljoin(base_url, os.path.split(u.path)[0])
 
     if href[0] == "/":
         # Absolute paths
