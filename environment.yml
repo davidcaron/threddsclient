@@ -11,3 +11,5 @@ dependencies:
 # tests
   - pytest
   - flake8
+# release
+  - bumpversion
